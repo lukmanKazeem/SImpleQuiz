@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Undrstanding Radio Buttons</title>
+		<script type="text/javascript">
+			function check1(){
+				alert(document.getElementById(1).checked);
+			}
+
+			function check2()
+			{
+				for(var i = 0; i < 4; i++)
+				{
+					if(document.forms[2].elements[i].checked)
+					{
+						alert(document.forms[2].elements[i].value);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Undertanding Radio Buttons</h1>
+		<h2>Form one</h2>
+		<form>
+			<input type="radio" name="r1"> One<br/>
+			<input type="radio" name="r1"> Two<br/>
+			<input type="radio" name="r11"> Three<br/>
+			<input type="radio" name="r11"> Four<br/>
+		</form>
+		<hr/>
+		<h2>Form two</h2>
+		<form>
+			<input type="radio" name="r1" id=1> One<br/>
+			<input type="radio" name="r1" id=2> Two<br/>
+			<input type="radio" name="r1" id=3> Three<br/>
+			<input type="radio" name="r1" id=4> Four<br/>
+			<input type="button" onclick="check1()" value="check if option 1 selected">
+		</form>
+		<hr/>
+		<h2>Form three</h2>
+		<!-- No id -->
+		<form>
+			<input type="radio" name="r1" value="zero"> Zero<br/>
+			<input type="radio" name="r1" value="one"> One<br/>
+			<input type="radio" name="r1" value="two"> Two<br/>
+			<input type="radio" name="r1" value="three"> Three<br/>
+			<input type="button" onclick="check2()" value="check which option is selected">
+		</form>
+	</body>
+</html>

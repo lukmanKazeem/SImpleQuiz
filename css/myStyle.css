@@ -1,0 +1,43 @@
+body{
+	background-color: black;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.btn {
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: groove 3px #086692;
+	color: white;
+	background-color: #086692;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+h1, h2{
+	font-family: "Monotype Corsiva";
+}
+
+.question{
+	margin: 10px auto;
+	width: 60%;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid 2px #086692;
+	background-color: #3FBAF4;
+	color: #fff;
+	text-align: center;
+}
+
+
+.ansDiv{
+	background-color: #086692;
+	font-weight: bold;
+	padding: 5px;
+	visibility: hidden;
+}
