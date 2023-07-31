@@ -8,6 +8,7 @@
 	<body>
 		<!-- start main div -->
 		<div style="width: 90%; margin: 0 auto;">
+
 			<!-- preload images -->
 			<div style="display: none;">
 				<img src="img/RotatingCubeBlackWhite.gif">
@@ -18,14 +19,14 @@
 			<!-- start header div -->
 			<div style="text-align: center">
 				<h1>The JavaScript Quiz</h1>
-				<img src="img/RotatingCubeColor.gif">
-				<h2>Test your JavaScript Knowledge</h2>
-				<button class="btn">Start</button>
+				<img src="img/RotatingCubeColor.gif" id="headImg">
+				<h2 id="msg">Test your JavaScript Knowledge</h2>
+				<button id="startBtn" class="btn" onclick="start()">Start</button>
 			</div> <!-- end header div -->
 
 
 			<!-- start question 1-->
-			<div class="question">
+			<div class="question" id="question0">
 				<h3>Q1. JavaScript is a  _____________  language</h3>
 				<form>
 					<table cellpadding="10" align="Center">
@@ -46,22 +47,21 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2" class="ansDiv">Correct!!!</td>
+							<td colspan="2" class="ansDiv" id="ansBlock0">Correct!!!</td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input type="button" value="submit" class="btn"/>
+								<input type="button" value="submit" class="btn" id=0 onclick="check(this.id)"/>
 							</td>
 						</tr>
 					</table>
 				</form>
-				
 			</div><!-- end question 1 div -->
 
 
 
 			<!-- start question 2 -->
-			<div class="question">
+			<div class="question" id="question1">
 				<h3>Q2. JavaScript is a  _____________ Side Scripting Langugage</h3>
 				<form>
 					<table cellpadding="10" align="Center">
@@ -82,22 +82,21 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2" class="ansDiv">Correct!!!</td>
+							<td colspan="2" class="ansDiv" id="ansBlock1">Correct!!!</td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input type="button" value="submit" class="btn"/>
+								<input type="button" value="submit" class="btn" id=1 onclick="check(this.id)"/>
 							</td>
 						</tr>
 					</table>
 				</form>
-				
 			</div><!-- end question 2 div -->
 
 
-s
+
 			<!-- start question 3 -->
-			<div class="question">
+			<div class="question" id="question2">
 				<h3>Q3. JavaScript is written inside file having extension _________</h3>
 				<form>
 					<table cellpadding="10" align="Center">
@@ -118,11 +117,11 @@ s
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2" class="ansDiv">Correct!!!</td>
+							<td colspan="2" class="ansDiv" id="ansBlock2">Correct!!!</td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input type="button" value="submit" class="btn"/>
+								<input type="button" value="submit" class="btn" id=2 onclick="check(this.id)"/>
 							</td>
 						</tr>
 					</table>
